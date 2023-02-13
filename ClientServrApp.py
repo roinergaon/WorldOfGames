@@ -4,22 +4,24 @@ import sys
 
 app = Flask(__name__)
 
-
+# Welcome message for the user
 @app.route('/')
-def index():
+def welcome():
     return render_template('number_guesser.html')
 
-# Welcome message for the user
-#@app.route('/')
-#def welcome():
- #   return "Welcome to the number guessing game!\nGuess a number between 0 and 100."
-
-# Generate a random number in the range [0-100]
-secret = random.randint(0, 100)
+# Generate a random number in the range provided by the user
+@app.route('/range', methods=['POST'])
+def set_range():
+    global secret, lower, upper
+    lower = int(request.form['lower-bound'])
+    upper = int(request.form['upper-bound'])
+    secret = random.randint(lower, upper)
+    return render_template('number_guesser.html', lower=lower, upper=upper)
 
 # Get the user's guess and compare it to the secret number
 @app.route('/guess', methods=['POST'])
 def guess():
+    global secret
     guess = int(request.form['guess'])
     if guess > secret:
         return "Too big"
@@ -29,10 +31,10 @@ def guess():
         return "Well done"
 
 # Check if the number of arguments passed through sys.args is correct
-if len(sys.argv) != 2:
-    print("Usage: python number_guesser.py PORT")
+if len(sys.argv) != 3:
+    print("Usage: python number_guesser.py PORT TEMPLATE_DIR")
     sys.exit()
 
 # Start the Flask server
 if __name__ == '__main__':
-    app.run(port=int(sys.argv[1]), debug=True)
+    app.run(port=int(sys.argv[1]), template_folder=sys.argv[2], debug=True)

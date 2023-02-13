@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4a5434e4-5788-481c-b7c0-ed26948f233b" name="Changes" comment="Add client and sever for app game">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ClientServrApp.py" beforeDir="false" afterPath="$PROJECT_DIR$/ClientServrApp.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -226,7 +227,28 @@
       <option name="project" value="LOCAL" />
       <updated>1676304533365</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="Add client and sever for app game">
+      <created>1676304845436</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1676304845436</updated>
+    </task>
+    <task id="LOCAL-00028" summary="Add client and sever for app game">
+      <created>1676304955531</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1676304955531</updated>
+    </task>
+    <task id="LOCAL-00029" summary="Add client and sever for app game">
+      <created>1676305091828</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1676305091828</updated>
+    </task>
+    <option name="localTasksCounter" value="30" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
