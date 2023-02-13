@@ -10,9 +10,9 @@ def index():
     return render_template('number_guesser.html')
 
 # Welcome message for the user
-@app.route('/')
-def welcome():
-    return "Welcome to the number guessing game!\nGuess a number between 0 and 100."
+#@app.route('/')
+#def welcome():
+ #   return "Welcome to the number guessing game!\nGuess a number between 0 and 100."
 
 # Generate a random number in the range [0-100]
 secret = random.randint(0, 100)
