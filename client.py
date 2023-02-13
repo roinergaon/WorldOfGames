@@ -9,7 +9,7 @@ while True:
     guess = int(input("Enter your guess: "))
 
     # Send the guess to the server
-    response = requests.post(url, data={"guess": guess})
+    response = requests.get(url, params={"guess": guess})
 
     # Check if the user has won the game
     if "Well done" in response.text:
