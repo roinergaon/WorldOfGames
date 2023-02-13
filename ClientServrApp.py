@@ -1,26 +1,22 @@
-from flask import Flask, request
+import sys
 import random
+from flask import Flask, render_template, request
 
 app = Flask(__name__)
 
-# Generate a random number in the range [0, 100]
-secret_number = random.randint(0, 100)
+@app.route('/s', methods=['GET', 'POST'])
+def index():
+    message = "Welcome to the number guessing game!"
+    secret = random.randint(0, 100) if len(sys.argv) < 2 else random.randint(0, int(sys.argv[1]))
+    if request.method == 'POST':
+        guess = int(request.form['guess'])
+        if guess == secret:
+            message = "Well done! The secret number was {}".format(secret)
+        elif guess > secret:
+            message = "Too big! Try again."
+        else:
+            message = "Too small! Try again."
+    return render_template('index.html', message=message)
 
-# Route for handling requests to the guessing game
-@app.route("/guess", methods=["POST"])
-def guess():
-    # Get the user's guess from the request data
-    guess = int(request.data)
-
-    # Check if the guess is too high, too low, or correct
-    if guess > secret_number:
-        result = "Too big"
-    elif guess < secret_number:
-        result = "Too small"
-    else:
-        result = "Well done!"
-
-    return result
-
-if __name__ == "__main__":
+if __name__ == '__main__':
     app.run()
