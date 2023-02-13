@@ -1,38 +1,25 @@
 from flask import Flask, request
 import random
-import sys
 
 app = Flask(__name__)
 
-# Generate a random number in range [0, 100]
-secret = random.randint(0, 100)
-
-@app.route("/guess", methods=["GET", "POST"])
+@app.route("/")
 def guess():
-    if request.method == "POST":
-        # Get the guess from the client
-        guess = int(request.form["guess"])
-    elif request.method == "GET":
+    lower = 0
+    upper = 100
+    secret_number = random.randint(lower, upper)
+    message = "The secret number is in the range [" + str(lower) + "-" + str(upper) + "].\n"
+
+    if request.args.get("guess"):
         guess = int(request.args.get("guess"))
+        if guess > secret_number:
+            message += "Too big\n"
+        elif guess < secret_number:
+            message += "Too small\n"
+        else:
+            message += "Well done!\n"
 
-    # Check if the guess is too big, too small, or correct
-    if guess > secret:
-        result = "Too big."
-    elif guess < secret:
-        result = "Too small."
-    else:
-        result = "Well done! The secret number was " + str(secret)
-
-    return result
+    return message
 
 if __name__ == "__main__":
-    # Check if the correct number of arguments was provided
-    if len(sys.argv) != 2:
-        print("Usage: python server.py port")
-        sys.exit()
-
-    # Get the port from the command line argument
-    #port = int(sys.argv[1])
-
-    # Start the server
-    app.run(port=5000)
+    app.run()
