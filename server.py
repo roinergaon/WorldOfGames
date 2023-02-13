@@ -7,7 +7,7 @@ app = Flask(__name__)
 # Generate a random number in range [0, 100]
 secret = random.randint(0, 100)
 
-@app.route("/guess", methods=["POST", "GET"])
+@app.route("/guess", methods=["POST", "GET", "DELETE"])
 def guess():
     # Get the guess from the client
     guess = int(request.form["guess"])
