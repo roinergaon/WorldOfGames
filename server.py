@@ -32,7 +32,7 @@ if __name__ == "__main__":
         sys.exit()
 
     # Get the port from the command line argument
-    port = int(sys.argv[1])
+    #port = int(sys.argv[1])
 
     # Start the server
-    app.run(port=port)
+    app.run(port=5000)
