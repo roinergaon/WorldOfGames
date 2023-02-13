@@ -4,7 +4,7 @@ from flask import Flask, render_template, request
 
 app = Flask(__name__)
 
-@app.route('/s', methods=['GET', 'POST'])
+@app.route('/', methods=['GET', 'POST'])
 def index():
     message = "Welcome to the number guessing game!"
     secret = random.randint(0, 100) if len(sys.argv) < 2 else random.randint(0, int(sys.argv[1]))
