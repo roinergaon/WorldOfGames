@@ -9,8 +9,11 @@ secret = random.randint(0, 100)
 
 @app.route("/guess", methods=["GET", "POST"])
 def guess():
-    # Get the guess from the client
-    guess = int(request.form["guess"])
+    if request.method == "POST":
+        # Get the guess from the client
+        guess = int(request.form["guess"])
+    elif request.method == "GET":
+        guess = int(request.args.get("guess"))
 
     # Check if the guess is too big, too small, or correct
     if guess > secret:
