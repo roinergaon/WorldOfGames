@@ -16,5 +16,6 @@ while True:
         print(response.text)
         break
 
+
     # Print the result from the server
     print(response.text)
