@@ -1,18 +1,20 @@
 import requests
 
-def play_guessing_game(host):
-    url = "http://" + host
-    message = requests.get(url).text
-    print(message, end="")
-    guess = int(input("Make a guess: "))
-    url += "?guess=" + str(guess)
-    message = requests.get(url).text
-    print(message, end="")
+# URL of the server
+url = "http://localhost:5000/guess"
 
-if __name__ == "__main__":
-    if len(sys.argv) != 2:
-        print("Usage: python guessing_game_client.py host")
-        sys.exit(1)
+# Keep looping until the user guesses the right number
+while True:
+    # Get the guess from the user
+    guess = int(input("Enter your guess: "))
 
-    host = sys.argv[1]
-    play_guessing_game(host)
+    # Send the guess to the server
+    response = requests.post(url, data={"guess": guess})
+
+    # Check if the user has won the game
+    if "Well done" in response.text:
+        print(response.text)
+        break
+
+    # Print the result from the server
+    print(response.text)
