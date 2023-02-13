@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="4a5434e4-5788-481c-b7c0-ed26948f233b" name="Changes" comment="Add client and sever for app game" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2LgQ2xmf9CYdr6BjlfJAblmrLvn" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/roig/Desktop/GuessNumberGame&quot;
+  }
+}</component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="4a5434e4-5788-481c-b7c0-ed26948f233b" name="Changes" comment="" />
+      <created>1676290042396</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1676290042396</updated>
+    </task>
+    <task id="LOCAL-00001" summary="Add client and sever foe app game">
+      <created>1676291300070</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1676291300070</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Add client and sever foe app game">
+      <created>1676291496419</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1676291496419</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Add client and sever foe app game">
+      <created>1676291832704</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1676291832704</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Add client and sever for app game">
+      <created>1676292147111</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1676292147111</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Add client and sever for app game">
+      <created>1676292333936</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1676292333936</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Add client and sever for app game">
+      <created>1676292682569</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1676292682569</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Add client and sever for app game">
+      <created>1676293393292</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1676293393292</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Add client and sever for app game">
+      <created>1676297527758</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1676297527758</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Add client and sever for app game">
+      <created>1676298509830</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1676298509830</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Add client and sever for app game">
+      <created>1676298811937</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1676298811937</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Add client and sever for app game">
+      <created>1676298927108</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1676298927108</updated>
+    </task>
+    <task id="LOCAL-00012" summary="Add client and sever for app game">
+      <created>1676299174064</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1676299174064</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Add client and sever foe app game" />
+    <MESSAGE value="Add client and sever for app game" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add client and sever for app game" />
+  </component>
+</project>
