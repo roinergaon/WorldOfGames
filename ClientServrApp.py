@@ -4,6 +4,11 @@ import sys
 
 app = Flask(__name__)
 
+
+@app.route('/')
+def index():
+    return render_template('number_guesser.html')
+
 # Welcome message for the user
 @app.route('/')
 def welcome():
